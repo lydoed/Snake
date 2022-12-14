@@ -1,0 +1,54 @@
+
+
+body {
+    display: block;
+    margin: auto;
+    width: 700px;
+}
+
+
+p{
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+
+#name {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+#score {
+    background-color: rgb(186, 240, 240);
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 10%;
+    border: 3px rgb(89, 81, 165) solid;
+    border-radius: 5px;
+}
+
+
+#snake {
+    display: flex;
+    background-color: rgb(177, 243, 101);
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px black solid;
+    border-radius: 5px;
+    
+}
+
+.users{
+    background-color: rgb(94, 89, 243);
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 5px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css" >
+    <title>Snake</title>
+    <script src="/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <form id = "name" method="post">
+        <input type="text" id="user">
+        <input type="submit" value="OK">
+    </form>
+    <p id="score">000</p>
+    <canvas id="snake" width="320" height="400"></canvas>
+    <p>Press "Q" to start</p>
+    <p>Press "E" to pause</p>
+    <p>Press "R" to drop</p>
+    <p>Press "W" to move top</p>
+    <p>Press "A" to move left</p>
+    <p>Press "S" to move bottom</p>
+    <p>Press "D" to move right</p>
+
+    <ul>
+    <% record.forEach(user =>{ %>
+        <li class="users">
+            <h1> <%= user.user %></h1>
+            <h3> <%= user.score %> </h3>
+        </li>
+    <% }) %>
+    </ul>
+    <script src="/main.js" type="module"></script>
+</body>
+</html>
