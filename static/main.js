@@ -109,6 +109,7 @@ function snake(){
         if(value.x == snake_head.posX && value.y == snake_head.posY){
             $(() =>{
                 $.ajax({
+                    async: true,
                     type: 'POST',
                     data: `name={"name":"${usernow}", "score":${score.real}}`,
                 })
