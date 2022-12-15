@@ -114,9 +114,9 @@ function snake(){
                     data: `name={"name":"${usernow}", "score":${score.real}}`,
                 })
             });
+            cancelAnimationFrame( myrek )
             location.reload()
             newrecord()
-            cancelAnimationFrame( myrek )
             restart()
         }
     })
