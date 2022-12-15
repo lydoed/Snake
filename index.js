@@ -8,7 +8,7 @@ const __dirname = path.resolve()
 
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = 3000
 
 app.use(express.static(path.join(__dirname, 'static')))
 app.use(bodyParser.urlencoded({extended : false}))
