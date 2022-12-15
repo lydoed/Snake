@@ -5,7 +5,7 @@ import bodyParser from 'body-parser'
 
 
 const __dirname = path.resolve()
-
+let a = 1
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -22,12 +22,12 @@ app.set('views', path.join(__dirname, 'page'));
 
 
 app.get('/', (req, res) => {
+    a = 1
     res.render(path.resolve(__dirname, 'page', 'main.ejs'), {record:record()})
 })
 
 
 app.post('/', (req, res) => {
-    let a = 1
     let name = JSON.parse(req.body.name)
     if(a == 1){
         fs.appendFile('records.txt', `|${name.name}|${name.score}`, err =>{})
