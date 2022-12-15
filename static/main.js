@@ -114,8 +114,8 @@ function snake(){
                 })
             });
             cancelAnimationFrame( myrek )
-            restart()
             location.reload()
+            restart()
         }
     })
     if(snake_taill.tails.length == snake_taill.count_of_tails){
