@@ -113,10 +113,9 @@ function snake(){
                     data: `name={"name":"${usernow}", "score":${score.real}}`,
                 })
             });
-            new_record()
             cancelAnimationFrame( myrek )
             restart()
-            location.reload()
+            location.href = location.href
         }
     })
     if(snake_taill.tails.length == snake_taill.count_of_tails){
